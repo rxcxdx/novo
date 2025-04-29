@@ -1,0 +1,14 @@
+/*
+table {
+  border: 2px solid blue;
+}
+*/
+
+th,
+td {
+  border: 1px solid black;
+}
+
+td {
+  padding: 3px;
+}
