@@ -1,0 +1,11 @@
+1 low severity vulnerability (sweetalert2)
+------------------------------
+mode:"production" 1,1M dist/
+bootstrap completo
+lodash-es completo
+------------------------------
+react-intl = adiciona pouco tamanho
+npm i react-intl
+------------------------------
+NADA CONGELADO
+------------------------------
