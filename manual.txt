@@ -1,0 +1,10 @@
+found 0 vulnerabilities
+------------------------------
+du -h dist/
+804K dist/
+944K dist/ COM SWEET
+1,3M dist/ COM ANTD
+
+-----------------
+npm run dev
+npm run build
