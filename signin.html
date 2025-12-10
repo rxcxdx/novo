@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exemplo de clique</title>
+    </head>
+    <body>
+        <div><input type="text" placeholder="username" id="username" /></div>
+        <div><input type="text" placeholder="senha" id="senha" /></div>
+        <div><button id="btn">entrar</button></div>
+        <script>
+            const botao = document.getElementById("btn");
+            botao.addEventListener("click", async () => {
+                const username = document.getElementById("username");
+                const senha = document.getElementById("senha");
+                const url = "/ws/login";
+                const dto = {
+                    name: username.value,
+                    pass: senha.value,
+                };
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(dto),
+                });
+
+                if (response.ok) {
+                    const o = await response.json();
+		    window.location.replace('/?access_token=' + o.token)
+                } else {
+                    window.alert("ERRO");
+                }
+            });
+        </script>
+    </body>
+</html>
+
