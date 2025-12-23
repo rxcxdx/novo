@@ -1,0 +1,7 @@
+900K dist/ 
+-----------------------------
+npm run dev
+npm run build
+npm run formatar
+-----------------------------
+frontend não utilizar .then()
