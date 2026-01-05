@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+
+.rc-input-number-input {
+    border: 1px solid black;
+    width: 100%
+  }
