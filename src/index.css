@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+@import '@rc-component/table/assets/index.css';
+
+.rc-input-number-input {
+    border: 1px solid black;
+    width: 100%;
+}
